@@ -1,0 +1,1 @@
+This script configures clangd for a WPILib project. This is useful to get intellisense working in editors like Zed. To use this script, you'll first need to download the gradle dependencies. Then, simply run the scriptto generate a .clangd file for your project.
