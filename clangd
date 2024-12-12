@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "CompileFlags:" > .clangd
+echo -n "  Add: [-std=c++20,-I$PWD/src/main/include," >> .clangd
+
+for DIR in $(find ~/.gradle -name "*-headers" | grep -v sim)
+do
+  echo -n "-I$DIR," >> .clangd
+done
+
+echo "]" >> .clangd
